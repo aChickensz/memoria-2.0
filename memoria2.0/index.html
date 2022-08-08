@@ -108,7 +108,15 @@
                 <button onclick="window.location.reload()" class="btn-9 center2"><span style="font-size: 16px">{{ getLiteral('refresh2') }}</span></button>
             </div>
         </section>
+    <button onclick="landscape()">Can't see?</button>	
     </main>
     <script src="memoria.js"></script>
+<script>
+    function landscape(){
+        if(window.innerHeight > window.innerWidth){
+    alert("Please use Landscape!");
+    }
+    }
+</script>
 </body>
 </html>
