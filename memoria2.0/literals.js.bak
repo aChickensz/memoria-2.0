@@ -31,7 +31,7 @@ var literals = [
     },
     {
         "id": "refresh2",
-        "english": "Click to play again",
-        "spanish": "Hacer clic aqui para jugar de nuevo"
+        "english": "Click to refresh",
+        "spanish": "Hacer clic aqui para actualizar"
     }
 ]

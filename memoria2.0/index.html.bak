@@ -18,15 +18,16 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="buttons.css">
 </head>
-<body>
+<body onload="landscape()">
     <main id="game" class="center" >
             <section class="language" v-if="currentLanguage === ''" style="border:3px dashed black; padding: 25px">      
-<button onclick="landscape()">Can't see?</button>				
+			
                 <h1 style="font-size:24px">Memoria</h1> 
                 
-                <a href="#" v-on:click="setLanguage('english')" style="position:relative;margin-left: 15px">English</p></a>
+                <a href="#" v-on:click="setLanguage('english')" onclick="landscape()" style="position:relative;margin-left: 15px">English</p></a>
                 
-                <a href="#" v-on:click="setLanguage('spanish')" style="position:relative;margin-left: 15px">Español</p></a>
+                <a href="#" v-on:click="setLanguage('spanish')" onclick="landscape()" style="position:relative;margin-left: 15px">Español</p></a>
+				<!--<button onclick="landscape()">Can't see?</button>-->
             </section>
         <section class="texto" v-if="isFinished === false && currentLanguage !== ''" style="border:3px dashed black; padding: 15px">
             <section class="texto__main">
