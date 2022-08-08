@@ -20,12 +20,14 @@
 </head>
 <body>
     <main id="game" class="center" >
-            <section class="language" v-if="currentLanguage === ''" style="border:3px dashed black; padding: 25px">                
+            <section class="language" v-if="currentLanguage === ''" style="border:3px dashed black; padding: 25px">      
+			
                 <h1 style="font-size:24px">Memoria</h1> 
                 
                 <a href="#" v-on:click="setLanguage('english')" style="position:relative;margin-left: 15px">English</p></a>
                 
                 <a href="#" v-on:click="setLanguage('spanish')" style="position:relative;margin-left: 15px">Español</p></a>
+				<button onclick="landscape()">Can't see?</button>	
             </section>
         <section class="texto" v-if="isFinished === false && currentLanguage !== ''" style="border:3px dashed black; padding: 15px">
             <section class="texto__main">
@@ -108,7 +110,10 @@
                 <button onclick="window.location.reload()" class="btn-9 center2"><span style="font-size: 16px">{{ getLiteral('refresh2') }}</span></button>
             </div>
         </section>
-    <button onclick="landscape()">Can't see?</button>	
+	<br>
+	<br>
+	<br>
+    
     </main>
     <script src="memoria.js"></script>
 <script>
