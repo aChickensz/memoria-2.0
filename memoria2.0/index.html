@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="buttons.css">
 </head>
-<body>
+<body onload="landscape()">
     <main id="game" class="center" >
             <section class="language" v-if="currentLanguage === ''" style="border:3px dashed black; padding: 25px">      
 			
@@ -121,6 +121,7 @@
         if(window.innerHeight > window.innerWidth){
     alert("Please use Landscape!");
     }
+	location.reload();
     }
 </script>
 </body>
